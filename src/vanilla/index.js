@@ -5,10 +5,9 @@ document.addEventListener("DOMContentLoaded", function() {
   liff
     .init({ liffId: process.env.LIFF_ID })
     .then(() => {
-        alert("Success! you can do something with LIFF API here.")
         const context = liff.getContext();
-        console.log(context);
-        alert(context);
+
+        alert('LIFF_ID:' + process.env.LIFF_ID);
         console.log("Success! you can do something with LIFF API here.")
 
         liff
